@@ -6,7 +6,7 @@ Simple adaptive web app for PCs, tablets and phones.
 
 ## Graph view for dev
 
-`
+```
 +----------------+                               +-------------------+
 |      GUI       |                               | Core Components:  |
 +----------------+                               |                   |
@@ -31,4 +31,4 @@ JSON Output:
 - mth_path (medium thumbnail path)
 - lth_path (large thumbnail path)
 - tags
-`
+```
