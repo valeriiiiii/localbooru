@@ -1,4 +1,4 @@
-## LocalBooru 
+да## LocalBooru 
 
 Local booru like media tagging tool(?)
 
@@ -31,4 +31,5 @@ JSON Output:
 - mth_path (medium thumbnail path)
 - lth_path (large thumbnail path)
 - tags
+- comments 
 ```
