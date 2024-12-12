@@ -1,4 +1,4 @@
-да## LocalBooru 
+## LocalBooru 
 
 Local booru like media tagging tool(?)
 
