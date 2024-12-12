@@ -41,3 +41,9 @@ JSON Output:
 - [ ] For thumbler add black/white lists to include/exclude filetypes which will be thumbled
 - [ ] Make thumbler as class
 - [ ] Web interface (look at gelbooru/rule34 as an example)
+
+#TODO list from jsonDB.py:
+- [ ] tag mangement (add tag to an existing entry) and etc
+- [ ] all entried will be existing cause a scanner will add them if not. Also uploading a picture would cause db to add entry to it and 
+- [ ] renamer module changing the name of the pic to it's hash 
+- [ ] if file does not exist then remove it's entry (check consistency?)
