@@ -38,6 +38,6 @@ JSON Output:
 
 ## TODO list
 
-[ ] For thumbler add black/white lists to include/exclude filetypes which will be thumbled
-[ ] Make thumbler as class
-[ ] Web interface (look at gelbooru/rule34 as an example)
+- [ ] For thumbler add black/white lists to include/exclude filetypes which will be thumbled
+- [ ] Make thumbler as class
+- [ ] Web interface (look at gelbooru/rule34 as an example)
