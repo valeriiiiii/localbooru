@@ -31,5 +31,7 @@ JSON Output:
 - mth_path (medium thumbnail path)
 - lth_path (large thumbnail path)
 - tags
-- comments 
+- comments
+- authors
+- meta
 ```
