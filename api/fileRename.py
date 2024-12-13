@@ -11,7 +11,7 @@ def md5_hash_file(filepath):
 
 def rename_media_files(folder_path):
     """Recursively rename media files in the given folder to their MD5 hash."""
-    media_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.webm', '.mp4', '.avi', '.mkv')  # Add more extensions as needed
+    media_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.webm', '.mp4', '.avi', '.mkv', '.webp')  # Add more extensions as needed
 
     for root, dirs, files in os.walk(folder_path):
         for filename in files:
