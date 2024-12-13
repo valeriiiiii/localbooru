@@ -44,7 +44,7 @@ JSON Output:
 
 ## TODO list from jsonDB.py:
 
-- [ ] **Spit classes in different files**
+- [x] **Spit classes in different files**
 
 - [ ] tag mangement (add tag to an existing entry) and etc
 - [ ] all entried will be existing cause a scanner will add them if not. Also uploading a picture would cause db to add entry to it and 
