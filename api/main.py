@@ -1,5 +1,6 @@
 from database import Database
 from mediaScanner import MediaScanner
+from tagManager import tagManager
 
 if __name__ == "__main__":
     config = {
