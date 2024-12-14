@@ -1,13 +1,17 @@
 import json
 from typing import Dict, Any, List
-
+from tagManager import TagManager
 
 class Database:
     def __init__(self, config: Dict[str, Any]):
         """Initialize the database with the given configuration."""
         self.db_path = config['db']['path']
         self.db = {}
-
+    
+    def get(self, key: str, default: Any = None) -> Any:
+        """Retrieve a value from the database by its key."""
+        return self.db.get(key, default)  # Return the value if it exists, otherwise return the default
+    
     def load(self) -> None:
         """Load data from a JSON file into the database."""
         try:
@@ -48,7 +52,8 @@ class Database:
     def pop(self, item: Dict[str, Any]) -> Dict[str, Any]:
         """Remove and return an item from the database."""
         return self.db.pop(item["name"], None)
-
+    
+    
     def find(self, query: Dict[str, Any], ignore_case: bool = True) -> List[Dict[str, Any]]:
         """Find items in the database based on the query."""
         results = []
@@ -82,3 +87,10 @@ class Database:
         self.db = unique_entries
         self.save()
         print("Duplicates removed.")
+    
+    def get_untagged_entries(self):
+        untagged_list = []
+        for key,value in self.db.items():
+            entry = TagManager(value["tags"])
+            untagged_list.append([key,entry.get_untagged_categories(),self.db[key]])
+        return untagged_list

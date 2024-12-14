@@ -42,7 +42,9 @@
             "large": ""
         },
         "tags": {
-            "General": [],
+            "General": [
+                "OrangeCat"
+            ],
             "Meta": [],
             "Authors": []
         },
