@@ -1,6 +1,5 @@
 from database import Database
 from mediaScanner import MediaScanner
-from tagManager import tagManager
 
 if __name__ == "__main__":
     config = {
@@ -15,8 +14,8 @@ if __name__ == "__main__":
     db.load()
     db.sort_by_name()
     db.remove_duplicates()
-
     scanner = MediaScanner(db, media_extensions)
     scanner.scan_folder(config['content']['image_folder'])
-
     db.save()
+   
+    

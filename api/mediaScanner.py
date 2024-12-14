@@ -1,6 +1,27 @@
 import os
 from typing import List, Dict, Any
 from database import Database
+from fileRename import rename_file_to_md5 as renameFile
+
+def create_entry_template(name: str, filepath: str) -> Dict[str, Any]:
+        """Create a template entry for the media file."""
+        return {
+            "name": name,
+            "filepath": filepath,
+            "thumbnail": {
+                "small": "",
+                "medium": "",
+                "large": ""
+            },
+            "tags": {
+                "General": [],
+                "Meta" : [],
+                "Authors": []
+            },
+            "comment": f"This is a media file named {name}.",
+            "CreationDate": "",
+            "Source": ""
+        }
 
 
 class MediaScanner:
@@ -11,7 +32,11 @@ class MediaScanner:
 
     def scan_folder(self, folder_path: str) -> None:
         """Scan the specified folder recursively for media files."""
-        for root, _, files in os.walk(folder_path):
+        for root, dirs, files in os.walk(folder_path):
+            # Ignore the '.thumb' directory and its subdirectories
+            if '.thumb' in dirs:
+                dirs.remove('.thumb')  # This will prevent os.walk from going into the .thumb directory
+
             for file in files:
                 if self.is_media_file(file):
                     self.process_file(os.path.join(root, file))
@@ -24,24 +49,9 @@ class MediaScanner:
         """Process the media file and create an entry in the database."""
         file_name = os.path.basename(file_path)
         if file_name not in self.db.db:
-            entry = self.create_entry_template(file_name, file_path)
+            new_file_path = renameFile(file_path)
+            new_file_name = os.path.basename(new_file_path)
+            entry = create_entry_template(new_file_name, new_file_path)
             self.db.append(entry)
 
-    def create_entry_template(self, name: str, filepath: str) -> Dict[str, Any]:
-        """Create a template entry for the media file."""
-        return {
-            "name": name,
-            "filepath": filepath,
-            "thumbnail": {
-                "small": "",
-                "medium": "",
-                "large": ""
-            },
-            "tags": {
-                "Style": [],
-                "Authors": []
-            },
-            "comment": f"This is a media file named {name}.",
-            "CreationDate": "",
-            "Source": ""
-        }
+    

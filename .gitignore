@@ -1,0 +1,5 @@
+# Ignore .thumb directory inside temp
+/temp/.thumb/
+
+# Ignore __pycache__ directory inside api
+/api/__pycache__/

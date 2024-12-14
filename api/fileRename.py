@@ -21,6 +21,7 @@ def rename_file_to_md5(file_path):
         # Rename the file
         os.rename(file_path, new_file_path)
         print(f'Renamed: {file_path} -> {new_file_path}')
+        return new_file_path
     else:
         print(f'Skipped: {file_path} (not a media file)')
 
