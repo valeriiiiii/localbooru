@@ -1,7 +1,7 @@
 {
-    "d5dae5a6db84ea2fd8a843bafdea7bf0.jpg": {
-        "name": "d5dae5a6db84ea2fd8a843bafdea7bf0.jpg",
-        "filepath": "../temp/d5dae5a6db84ea2fd8a843bafdea7bf0.jpg",
+    "1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4": {
+        "name": "1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4",
+        "filepath": "../temp/1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4",
         "thumbnail": {
             "small": "",
             "medium": "",
@@ -12,103 +12,10 @@
             "Meta": [],
             "Authors": []
         },
-        "comment": "This is a media file named d5dae5a6db84ea2fd8a843bafdea7bf0.jpg.",
-        "CreationDate": "",
-        "Source": ""
-    },
-    "5469c60b0ec3c088e8e44947a4430bb2.jpg": {
-        "name": "5469c60b0ec3c088e8e44947a4430bb2.jpg",
-        "filepath": "../temp/5469c60b0ec3c088e8e44947a4430bb2.jpg",
-        "thumbnail": {
-            "small": "",
-            "medium": "",
-            "large": ""
-        },
-        "tags": {
-            "General": [],
-            "Meta": [],
-            "Authors": []
-        },
-        "comment": "This is a media file named 5469c60b0ec3c088e8e44947a4430bb2.jpg.",
+        "comment": "This is a media file named 1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4.",
         "CreationDate": "",
         "Source": "",
-        "duplicates": [
-            "../temp/another duplicated folder/more duplicated/buba.jpg"
-        ]
-    },
-    "3ae7a8b326f3b089b7e859601733e49a.webp": {
-        "name": "3ae7a8b326f3b089b7e859601733e49a.webp",
-        "filepath": "../temp/3ae7a8b326f3b089b7e859601733e49a.webp",
-        "thumbnail": {
-            "small": "",
-            "medium": "",
-            "large": ""
-        },
-        "tags": {
-            "General": [],
-            "Meta": [],
-            "Authors": []
-        },
-        "comment": "This is a media file named 3ae7a8b326f3b089b7e859601733e49a.webp.",
-        "CreationDate": "",
-        "Source": "",
-        "duplicates": [
-            "../temp/another duplicated folder/boba.webp"
-        ]
-    },
-    "63003ac4690522da8571d37c7879be68.jpg": {
-        "name": "63003ac4690522da8571d37c7879be68.jpg",
-        "filepath": "../temp/63003ac4690522da8571d37c7879be68.jpg",
-        "thumbnail": {
-            "small": "",
-            "medium": "",
-            "large": ""
-        },
-        "tags": {
-            "General": [],
-            "Meta": [],
-            "Authors": []
-        },
-        "comment": "This is a media file named 63003ac4690522da8571d37c7879be68.jpg.",
-        "CreationDate": "",
-        "Source": ""
-    },
-    "c2617bd8f62287d59b22f1d870359411.gif": {
-        "name": "c2617bd8f62287d59b22f1d870359411.gif",
-        "filepath": "../temp/c2617bd8f62287d59b22f1d870359411.gif",
-        "thumbnail": {
-            "small": "",
-            "medium": "",
-            "large": ""
-        },
-        "tags": {
-            "General": [],
-            "Meta": [],
-            "Authors": []
-        },
-        "comment": "This is a media file named c2617bd8f62287d59b22f1d870359411.gif.",
-        "CreationDate": "",
-        "Source": ""
-    },
-    "a9ded6629c00fe8e6e7356e6cef8a21b.png": {
-        "name": "a9ded6629c00fe8e6e7356e6cef8a21b.png",
-        "filepath": "../temp/a9ded6629c00fe8e6e7356e6cef8a21b.png",
-        "thumbnail": {
-            "small": "",
-            "medium": "",
-            "large": ""
-        },
-        "tags": {
-            "General": [],
-            "Meta": [],
-            "Authors": []
-        },
-        "comment": "This is a media file named a9ded6629c00fe8e6e7356e6cef8a21b.png.",
-        "CreationDate": "",
-        "Source": "",
-        "duplicates": [
-            "../temp/another duplicated folder/biba.png"
-        ]
+        "duplicates": []
     },
     "24256bd41990d9e4661fcc6795d621a8.jpg": {
         "name": "24256bd41990d9e4661fcc6795d621a8.jpg",
@@ -126,13 +33,11 @@
         "comment": "This is a media file named 24256bd41990d9e4661fcc6795d621a8.jpg.",
         "CreationDate": "",
         "Source": "",
-        "duplicates": [
-            "../temp/Imma dogo duplicate.jpg"
-        ]
+        "duplicates": []
     },
-    "1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4": {
-        "name": "1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4",
-        "filepath": "../temp/1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4",
+    "3ae7a8b326f3b089b7e859601733e49a.webp": {
+        "name": "3ae7a8b326f3b089b7e859601733e49a.webp",
+        "filepath": "../temp/another Folder/3ae7a8b326f3b089b7e859601733e49a.webp",
         "thumbnail": {
             "small": "",
             "medium": "",
@@ -143,13 +48,46 @@
             "Meta": [],
             "Authors": []
         },
-        "comment": "This is a media file named 1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4.",
+        "comment": "This is a media file named 3ae7a8b326f3b089b7e859601733e49a.webp.",
         "CreationDate": "",
         "Source": "",
-        "duplicates": [
-            "../temp/New/1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4",
-            "../temp/another duplicated folder/1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4"
-        ]
+        "duplicates": []
+    },
+    "5469c60b0ec3c088e8e44947a4430bb2.jpg": {
+        "name": "5469c60b0ec3c088e8e44947a4430bb2.jpg",
+        "filepath": "../temp/5469c60b0ec3c088e8e44947a4430bb2.jpg",
+        "thumbnail": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        },
+        "tags": {
+            "General": [],
+            "Meta": [],
+            "Authors": []
+        },
+        "comment": "This is a media file named 5469c60b0ec3c088e8e44947a4430bb2.jpg.",
+        "CreationDate": "",
+        "Source": "",
+        "duplicates": []
+    },
+    "63003ac4690522da8571d37c7879be68.jpg": {
+        "name": "63003ac4690522da8571d37c7879be68.jpg",
+        "filepath": "../temp/63003ac4690522da8571d37c7879be68.jpg",
+        "thumbnail": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        },
+        "tags": {
+            "General": [],
+            "Meta": [],
+            "Authors": []
+        },
+        "comment": "This is a media file named 63003ac4690522da8571d37c7879be68.jpg.",
+        "CreationDate": "",
+        "Source": "",
+        "duplicates": []
     },
     "72a9664a2d792ca5f8389a1feeff3c6e.jpg": {
         "name": "72a9664a2d792ca5f8389a1feeff3c6e.jpg",
@@ -167,27 +105,7 @@
         "comment": "This is a media file named 72a9664a2d792ca5f8389a1feeff3c6e.jpg.",
         "CreationDate": "",
         "Source": "",
-        "duplicates": [
-            "../temp/New/72a9664a2d792ca5f8389a1feeff3c6e.jpg",
-            "../temp/another duplicated folder/72a9664a2d792ca5f8389a1feeff3c6e.jpg"
-        ]
-    },
-    "9d8b624cb6f2f9261e1b2f672ee14d93.webp": {
-        "name": "9d8b624cb6f2f9261e1b2f672ee14d93.webp",
-        "filepath": "../temp/9d8b624cb6f2f9261e1b2f672ee14d93.webp",
-        "thumbnail": {
-            "small": "",
-            "medium": "",
-            "large": ""
-        },
-        "tags": {
-            "General": [],
-            "Meta": [],
-            "Authors": []
-        },
-        "comment": "This is a media file named 9d8b624cb6f2f9261e1b2f672ee14d93.webp.",
-        "CreationDate": "",
-        "Source": ""
+        "duplicates": []
     },
     "7671139c4be1566b249c01d41489fe4b.jpg": {
         "name": "7671139c4be1566b249c01d41489fe4b.jpg",
@@ -204,6 +122,79 @@
         },
         "comment": "This is a media file named 7671139c4be1566b249c01d41489fe4b.jpg.",
         "CreationDate": "",
-        "Source": ""
+        "Source": "",
+        "duplicates": []
+    },
+    "9d8b624cb6f2f9261e1b2f672ee14d93.webp": {
+        "name": "9d8b624cb6f2f9261e1b2f672ee14d93.webp",
+        "filepath": "../temp/9d8b624cb6f2f9261e1b2f672ee14d93.webp",
+        "thumbnail": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        },
+        "tags": {
+            "General": [],
+            "Meta": [],
+            "Authors": []
+        },
+        "comment": "This is a media file named 9d8b624cb6f2f9261e1b2f672ee14d93.webp.",
+        "CreationDate": "",
+        "Source": "",
+        "duplicates": []
+    },
+    "a9ded6629c00fe8e6e7356e6cef8a21b.png": {
+        "name": "a9ded6629c00fe8e6e7356e6cef8a21b.png",
+        "filepath": "../temp/a9ded6629c00fe8e6e7356e6cef8a21b.png",
+        "thumbnail": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        },
+        "tags": {
+            "General": [],
+            "Meta": [],
+            "Authors": []
+        },
+        "comment": "This is a media file named a9ded6629c00fe8e6e7356e6cef8a21b.png.",
+        "CreationDate": "",
+        "Source": "",
+        "duplicates": []
+    },
+    "c2617bd8f62287d59b22f1d870359411.gif": {
+        "name": "c2617bd8f62287d59b22f1d870359411.gif",
+        "filepath": "../temp/c2617bd8f62287d59b22f1d870359411.gif",
+        "thumbnail": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        },
+        "tags": {
+            "General": [],
+            "Meta": [],
+            "Authors": []
+        },
+        "comment": "This is a media file named c2617bd8f62287d59b22f1d870359411.gif.",
+        "CreationDate": "",
+        "Source": "",
+        "duplicates": []
+    },
+    "d5dae5a6db84ea2fd8a843bafdea7bf0.jpg": {
+        "name": "d5dae5a6db84ea2fd8a843bafdea7bf0.jpg",
+        "filepath": "../temp/d5dae5a6db84ea2fd8a843bafdea7bf0.jpg",
+        "thumbnail": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        },
+        "tags": {
+            "General": [],
+            "Meta": [],
+            "Authors": []
+        },
+        "comment": "This is a media file named d5dae5a6db84ea2fd8a843bafdea7bf0.jpg.",
+        "CreationDate": "",
+        "Source": "",
+        "duplicates": []
     }
 }

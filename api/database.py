@@ -84,7 +84,6 @@ class Database:
         """Sort the database entries by the name of the entry."""
         sorted_db = dict(sorted(self.db.items(), key=lambda item: item[1]["name"]))
         self.db = sorted_db
-        print(sorted_db.keys())
         print("Database sorted by name.")
 
     def entry_exists(self, name: str) -> bool:

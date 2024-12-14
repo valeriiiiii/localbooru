@@ -61,13 +61,22 @@ class MediaScanner:
         potential_orig_file_path = os.path.join(os.path.dirname(file_path), predicted_name)
         existing_entry = self.db.get(predicted_name)  # Check if an entry with the same name exists
         
-        print(bool(existing_entry), not(file_name == predicted_name))
+       
 
         if existing_entry:
+            
             # If the entry exists, check for duplicates
+            if not(os.path.exists(existing_entry["filepath"])):
+                print("Original file was not found, renaming current one and making it the origin")
+                file_path=renameFile(file_path)
+                existing_entry["filepath"]=file_path
             if "duplicates" not in existing_entry:
                 existing_entry["duplicates"] = []  # Create the duplicates key if it doesn't exist
-            
+            else:
+                for dupliPath in existing_entry["duplicates"]:
+                    if not(os.path.exists(dupliPath)):
+                        existing_entry["duplicates"].remove(dupliPath)
+                        print("Found a non existant duplicate of file, deleted duplicate entry")
             # If the current file name matches the predicted name, do not add it to duplicates
             if file_path == existing_entry["filepath"]:
                 print("File already exists in the database, skipping:", file_path)
@@ -86,22 +95,17 @@ class MediaScanner:
                     self.process_file(potential_orig_file_path)
                     print("calling itself again to make sure that this entry will be written as a duplicate to the original one",file_path)
                     self.process_file(file_path)
-                #print("Skipping file as it is a duplicate:", file_path)
+
                     return  # Skip processing this file
 
             # If the entry does not exist and the filename matches the predicted name, create a new entry
-            new_file_path = renameFile(file_path)
+            if potential_orig_file_path==file_path:
+                new_file_path=file_path
+            else:         
+                new_file_path = renameFile(file_path)
             new_file_name = os.path.basename(new_file_path)
             
             if new_file_name == predicted_name:
                 print("Adding a new entry")
                 entry = create_entry_template(new_file_name, new_file_path)
                 self.db.append(entry)  # Append the new entry to the database
-            else:
-                # If the new file name does not match the predicted name, treat it as a duplicate
-                if "duplicates" not in existing_entry:
-                    existing_entry["duplicates"] = []  # Create the duplicates key if it doesn't exist
-                
-                if file_path not in existing_entry["duplicates"]:
-                    existing_entry["duplicates"].append(file_path)  # Append the current file path to the duplicates list
-                    print("This entry is PROBABLY a duplicate of another one, skipping:", file_path)
