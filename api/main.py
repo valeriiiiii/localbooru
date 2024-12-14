@@ -6,7 +6,7 @@ if __name__ == "__main__":
     config = {
         'db': {'path': '../db/database.json'},
         'content': {
-            'image_folder': '../temp'
+            'image_folder': r'D:\soft\art\ref - Copy'
         }
     }
 

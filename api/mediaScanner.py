@@ -84,10 +84,10 @@ class MediaScanner:
                 print("This file is a probably exduplicate, and original is in the same folder, calling process file on the precited path",potential_orig_file_path)
                 if os.path.exists(potential_orig_file_path):
                     self.process_file(potential_orig_file_path)
-                print("calling itself again to make sure that this entry will be written as a duplicate to the original one",file_path)
-                self.process_file(file_path)
-                print("Skipping file as it is a duplicate:", file_path)
-                return  # Skip processing this file
+                    print("calling itself again to make sure that this entry will be written as a duplicate to the original one",file_path)
+                    self.process_file(file_path)
+                #print("Skipping file as it is a duplicate:", file_path)
+                    return  # Skip processing this file
 
             # If the entry does not exist and the filename matches the predicted name, create a new entry
             new_file_path = renameFile(file_path)
