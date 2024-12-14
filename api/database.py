@@ -12,6 +12,19 @@ class Database:
         """Retrieve a value from the database by its key."""
         return self.db.get(key, default)  # Return the value if it exists, otherwise return the default
     
+    def __getitem__(self, index: int) -> Dict[str, Any]:
+        """Retrieve an entry from the database by its index."""
+        keys = list(self.db.keys())
+        if index < 0:
+            index += len(keys)  # Handle negative indexing
+        if index < 0 or index >= len(keys):
+            raise IndexError("Index out of range.")
+        return self.db[keys[index]]
+
+    def __len__(self) -> int:
+        """Return the number of entries in the database."""
+        return len(self.db)
+    
     def load(self) -> None:
         """Load data from a JSON file into the database."""
         try:
@@ -91,6 +104,6 @@ class Database:
     def get_untagged_entries(self):
         untagged_list = []
         for key,value in self.db.items():
-            entry = TagManager(value["tags"])
+            entry = TagManager(value)
             untagged_list.append([key,entry.get_untagged_categories(),self.db[key]])
         return untagged_list

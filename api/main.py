@@ -1,7 +1,7 @@
 from database import Database
 from mediaScanner import MediaScanner
 from tagManager import TagManager
-
+from thumbManager import ThumbManager
 if __name__ == "__main__":
     config = {
         'db': {'path': '../db/database.json'},
@@ -19,8 +19,15 @@ if __name__ == "__main__":
     #scanner.scan_folder(config['content']['image_folder'])
     #db.save()
     untagged = db.get_untagged_entries()
-    entry = db.get("d5dae5a6db84ea2fd8a843bafdea7bf0.jpg")
-    tm = TagManager(entry["tags"])
+    entry = db.get("7671139c4be1566b249c01d41489fe4b.jpg")
+    for i in db:
+        thumb_m=ThumbManager(i)
+        thumb_m.check_and_generate_thumbnails()
+        print(i)
+    tm = TagManager(entry)
     #tm.remove_tag("MyCategory",["test1","test2","test3"])
-    print(untagged[0][2])
+    #thumb_m=ThumbManager(entry)
+    #thumb_m.check_and_generate_thumbnails()
+    
+
     db.save()

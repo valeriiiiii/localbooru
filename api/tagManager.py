@@ -2,9 +2,10 @@
 from typing import Dict, Any, List
 
 class TagManager:
-    def __init__(self, tags: Dict[str, List[str]]):
+    def __init__(self, entry: Dict[str, List[str]]):
         """Initialize the TagManager with a dictionary of tags."""
-        self.tags = tags
+        self.tags = entry["tags"]
+        self.entry = entry
 
     def add_tag(self, category: str, tags) -> None:
         """Add one or more tags to a specific category."""
