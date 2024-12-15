@@ -3,6 +3,7 @@ from mediaScanner import MediaScanner
 from tagManager import TagManager
 from thumbManager import ThumbManager
 from search import search_by_tags
+from entry_manager import EntryManager
 
 if __name__ == "__main__":
     config = {
@@ -20,9 +21,12 @@ if __name__ == "__main__":
     #scanner = MediaScanner(db, media_extensions)
     #scanner.scan_folder(config['content']['image_folder'])
     #db.save()
-    tags = ["-*fur"]
+    tags = ["*","-dog"]
     search_res = search_by_tags(db.db, tags)
-    print(search_res)
+   # print(search_res)
+    EM = EntryManager(search_res[0])
+    print(EM)
+    
     #untagged = db.get_untagged_entries()
     #entry = db.get("7671139c4be1566b249c01d41489fe4b.jpg")
     #for i in db:
