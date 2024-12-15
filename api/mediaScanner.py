@@ -28,7 +28,7 @@ def create_entry_template(name: str, filepath: str) -> Dict[str, Any]:
                 "Meta" : [],
                 "Authors": []
             },
-            "comment": f"This is a media file named {name}.",
+            "comment": "",
             "CreationDate": "",
             "Source": ""
         }

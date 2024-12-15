@@ -2,6 +2,8 @@ from database import Database
 from mediaScanner import MediaScanner
 from tagManager import TagManager
 from thumbManager import ThumbManager
+from search import search_by_tags
+
 if __name__ == "__main__":
     config = {
         'db': {'path': '../db/database.json'},
@@ -13,11 +15,14 @@ if __name__ == "__main__":
     media_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.mp4', '.avi', '.mkv', '.webm', '.webp']
     db = Database(config)
     db.load()
-    db.sort_by_name()
-    db.remove_duplicates()
-    scanner = MediaScanner(db, media_extensions)
-    scanner.scan_folder(config['content']['image_folder'])
-    db.save()
+    #db.sort_by_name()
+    #db.remove_duplicates()
+    #scanner = MediaScanner(db, media_extensions)
+    #scanner.scan_folder(config['content']['image_folder'])
+    #db.save()
+    tags = ["-*fur"]
+    search_res = search_by_tags(db.db, tags)
+    print(search_res)
     #untagged = db.get_untagged_entries()
     #entry = db.get("7671139c4be1566b249c01d41489fe4b.jpg")
     #for i in db:

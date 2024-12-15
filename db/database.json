@@ -8,8 +8,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["dog", "apple"],
+            "Meta": ["ai_generated", "animated"],
             "Authors": []
         },
         "comment": "This is a media file named 1d5f6a42bdc5bcbbd31f52efaf79de5c.mp4.",
@@ -26,8 +26,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["dog"],
+            "Meta": ["photo"], 
             "Authors": []
         },
         "comment": "This is a media file named 24256bd41990d9e4661fcc6795d621a8.jpg.",
@@ -44,8 +44,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["dog", "field", "tongue_out"],
+            "Meta": ["photo"],
             "Authors": []
         },
         "comment": "This is a media file named 3ae7a8b326f3b089b7e859601733e49a.webp.",
@@ -62,8 +62,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["cat", "tree"],
+            "Meta": ["photo", "hi_resolution"],
             "Authors": []
         },
         "comment": "This is a media file named 5469c60b0ec3c088e8e44947a4430bb2.jpg.",
@@ -80,8 +80,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["cat", "orange_fur"],
+            "Meta": ["photo"],
             "Authors": []
         },
         "comment": "This is a media file named 63003ac4690522da8571d37c7879be68.jpg.",
@@ -98,8 +98,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["cat"],
+            "Meta": ["photo"],
             "Authors": []
         },
         "comment": "This is a media file named 72a9664a2d792ca5f8389a1feeff3c6e.jpg.",
@@ -116,8 +116,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["cat", "white_fur"],
+            "Meta": ["hi_resolution"],
             "Authors": []
         },
         "comment": "This is a media file named 7671139c4be1566b249c01d41489fe4b.jpg.",
@@ -134,7 +134,7 @@
             "large": ""
         },
         "tags": {
-            "General": [],
+            "General": ["cat", "black_fur"],
             "Meta": [],
             "Authors": []
         },
@@ -152,8 +152,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["mouse", "computer"],
+            "Meta": ["transparent_background"],
             "Authors": []
         },
         "comment": "This is a media file named a9ded6629c00fe8e6e7356e6cef8a21b.png.",
@@ -170,8 +170,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["rat"],
+            "Meta": ["animated"],
             "Authors": []
         },
         "comment": "This is a media file named c2617bd8f62287d59b22f1d870359411.gif.",
@@ -188,8 +188,8 @@
             "large": ""
         },
         "tags": {
-            "General": [],
-            "Meta": [],
+            "General": ["dog", "black_fur", "doberman"],
+            "Meta": ["photo"],
             "Authors": []
         },
         "comment": "This is a media file named d5dae5a6db84ea2fd8a843bafdea7bf0.jpg.",
