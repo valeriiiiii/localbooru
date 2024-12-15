@@ -46,7 +46,6 @@ JSON Output:
 
 - [x] **Spit classes in different files**
 
-- [ ] tag mangement (add tag to an existing entry) and etc
-- [ ] all entried will be existing cause a scanner will add them if not. Also uploading a picture would cause db to add entry to it and 
-- [ ] renamer module changing the name of the pic to it's hash 
-- [ ] if file does not exist then remove it's entry (check consistency?)
+- [x] tag mangement (add tag to an existing entry) and etc
+- [x] all entried will be existing cause a scanner will add them if not. Also uploading a picture would cause db to add entry to it and  
+- [x] if file does not exist then remove it's entry (check consistency?)
