@@ -4,7 +4,7 @@ from tagManager import TagManager
 from thumbManager import ThumbManager
 from search import search_by_tags
 from entry_manager import EntryManager
-
+from xmp_cv2_viewer import ImageViewer
 if __name__ == "__main__":
     config = {
         'db': {'path': '../db/database.json'},
@@ -21,12 +21,14 @@ if __name__ == "__main__":
     #scanner = MediaScanner(db, media_extensions)
     #scanner.scan_folder(config['content']['image_folder'])
     #db.save()
-    tags = ["*","-dog"]
+    tags = ["XMP"]
     search_res = search_by_tags(db.db, tags)
-   # print(search_res)
+    # print(search_res)
     EM = EntryManager(search_res[0])
     print(EM)
-    
+    imView = ImageViewer(search_res[0])
+    #imView.open_image()
+    imView.print_metadata()
     #untagged = db.get_untagged_entries()
     #entry = db.get("7671139c4be1566b249c01d41489fe4b.jpg")
     #for i in db:
